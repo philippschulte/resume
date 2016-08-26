@@ -9,7 +9,7 @@ const router = express.Router();
 // Resume
 router.get('/', (req, res) => {
   const options = {
-    root: '/Users/WORKSTATION/Desktop/resume/public/assets/',
+    root: `${__dirname.slice(0, -10)}public/assets/`,
     dotfiles: 'deny',
     headers: {
         'x-timestamp': Date.now(),
