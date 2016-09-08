@@ -10,7 +10,7 @@ const router = express.Router();
 const assets = require('../controllers/assets');
 
 // Routes
-router.get('/resume', assets.resume);
+router.get('/', assets.resume);
 router.get('/introductiontoengineeringmechanics', assets.introductionToEngineeringMechanics);
 router.get('/applicationsinengineeringmechanics', assets.applicationsInEngineeringMechanics);
 router.get('/programmingforeverybody', assets.programmingForEverybody);
