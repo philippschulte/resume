@@ -6,25 +6,13 @@ const express = require('express');
 // Router
 const router = express.Router();
 
-// Resume
-router.get('/', (req, res) => {
-  const options = {
-    root: `${__dirname.slice(0, -10)}public/assets/`,
-    dotfiles: 'deny',
-    headers: {
-        'x-timestamp': Date.now(),
-        'x-sent': true
-    }
-  };
+// Controller
+const assets = require('../controllers/assets');
 
-  res.sendFile('resume.pdf', options, err => {
-    if (err) {
-      console.log(err);
-      res.status(err.status).end();
-    } else {
-      console.log('Sent: resume.pdf');
-    }
-  });
-});
+// Routes
+router.get('/resume', assets.resume);
+router.get('/introductiontoengineeringmechanics', assets.introductionToEngineeringMechanics);
+router.get('/applicationsinengineeringmechanics', assets.applicationsInEngineeringMechanics);
+router.get('/programmingforeverybody', assets.programmingForEverybody);
 
 module.exports = router;
