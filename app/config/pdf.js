@@ -1,10 +1,19 @@
 'use strict';
 
-module.exports = {
-  root: `${__dirname.slice(0, -10)}public/assets/`,
-  dotfiles: 'deny',
-  headers: {
-    'x-timestamp': Date.now(),
-    'x-sent': true
+class Option {
+  constructor(maxAge, surrogateKey_1, surrogateKey_2) {
+    this.root = `${__dirname.slice(0, -10)}public/assets/`,
+    this.headers = {
+      'Cache-Control': 'public, no-cache',
+      'Surrogate-Control': `max-age=${maxAge}`,
+      'Surrogate-Key': `${surrogateKey_1}${surrogateKey_2}`
+    }
   }
+}
+
+module.exports = {
+  resume: new Option('31557600000', 'resume', ''),
+  certificate_1: new Option('31557600000', 'certificate', ' certificate_1'),
+  certificate_2: new Option('31557600000', 'certificate', ' certificate_2'),
+  certificate_3: new Option('31557600000', 'certificate', ' certificate_3')
 };
