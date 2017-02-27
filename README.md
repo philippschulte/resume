@@ -1,13 +1,13 @@
 # resume
 
-I have created this `Node` server to deploy my resume to `Heroku`. This is the link to my resume:
+This is a simple [Express](http://expressjs.com/) service to serve my resume and some certifications as pdf files. The main entry point for the API is:
 
 ```
-http://philipps-resume.herokuapp.com/
+http://www.philippsresume.com/
 ```
 
-Here are the links to my certifications:
+For the sake of brevity, examples below omit this:
 
-* http://philipps-resume.herokuapp.com/introductiontoengineeringmechanics
-* http://philipps-resume.herokuapp.com/applicationsinengineeringmechanics
-* http://philipps-resume.herokuapp.com/programmingforeverybody
+* **GET** /introductiontoengineeringmechanics
+* **GET** /applicationsinengineeringmechanics
+* **GET** /programmingforeverybody
