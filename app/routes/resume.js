@@ -11,8 +11,8 @@ const assets = require('../controllers/assets');
 
 // Routes
 router.get('/', assets.resume);
-router.get('/introductiontoengineeringmechanics', assets.introductionToEngineeringMechanics);
-router.get('/applicationsinengineeringmechanics', assets.applicationsInEngineeringMechanics);
-router.get('/programmingforeverybody', assets.programmingForEverybody);
+router.get('/certificate/introductiontoengineeringmechanics', assets.introductionToEngineeringMechanics);
+router.get('/certificate/applicationsinengineeringmechanics', assets.applicationsInEngineeringMechanics);
+router.get('/certificate/programmingforeverybody', assets.programmingForEverybody);
 
 module.exports = router;
