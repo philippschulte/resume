@@ -15,5 +15,5 @@ module.exports = {
   resume: new Option('31557600000', 'resume', ''),
   certificate_1: new Option('31557600000', 'certificate', ' certificate_1'),
   certificate_2: new Option('31557600000', 'certificate', ' certificate_2'),
-  certificate_3: new Option('31557600000', 'certificate', ' certificate_3')
+  certificate_3: new Option('10', 'certificate', ' certificate_3')
 };
