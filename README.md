@@ -8,6 +8,6 @@ http://www.philippsresume.com/
 
 For the sake of brevity, examples below omit this:
 
-* **GET** /introductiontoengineeringmechanics
-* **GET** /applicationsinengineeringmechanics
-* **GET** /programmingforeverybody
+* **GET** /certificate/introductiontoengineeringmechanics
+* **GET** /certificate/applicationsinengineeringmechanics
+* **GET** /certificate/programmingforeverybody
