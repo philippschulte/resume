@@ -5,7 +5,7 @@ class Option {
     this.root = `${__dirname.slice(0, -10)}public/assets/`,
     this.headers = {
       'Cache-Control': 'public, no-cache',
-      'Surrogate-Control': `max-age=${maxAge} stale-if-error=120`,
+      'Surrogate-Control': `max-age=${maxAge} stale-if-error=120 stale-while-revalidate=30`,
       'Surrogate-Key': `${surrogateKey_1}${surrogateKey_2}`
     }
   }
