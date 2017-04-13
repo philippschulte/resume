@@ -41,14 +41,16 @@ function applicationsInEngineeringMechanics(req, res) {
 
 // Programming for Everybody
 function programmingForEverybody(req, res) {
-  res.sendFile('programming_for_everybody.pdf', config.certificate_3, err => {
-    if (err) {
-      console.log(err);
-      res.status(err.status).end();
-    } else {
-      console.log('Sent: programming_for_everybody.pdf');
-    }
-  });
+  setTimeout(function() {
+    res.sendFile('programming_for_everybody.pdf', config.certificate_3, err => {
+      if (err) {
+        console.log(err);
+        res.status(err.status).end();
+      } else {
+        console.log('Sent: programming_for_everybody.pdf');
+      }
+    });
+  }, 20000);
 };
 
 module.exports = {
