@@ -50,7 +50,7 @@ function programmingForEverybody(req, res) {
         console.log('Sent: programming_for_everybody.pdf');
       }
     });
-  }, 20000);
+  }, 10000);
 };
 
 module.exports = {
